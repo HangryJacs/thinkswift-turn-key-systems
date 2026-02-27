@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Brand Colors */
+  --ts-color-coconut-milk: #F5EFE8;
+  --ts-color-orange: #FF6A00;
+  --ts-color-blue: #1571D3;
+  --ts-color-black: #000000;
+  --ts-color-white: #FFFFFF;
+
+  /* Functional Colors */
+  --ts-background: var(--ts-color-coconut-milk);
+  --ts-text: var(--ts-color-black);
+  --ts-accent: var(--ts-color-orange);
+  --ts-secondary: var(--ts-color-blue);
+
+  /* Typography Families */
+  --ts-font-headers: 'Host Grotesk', sans-serif;
+  --ts-font-body: 'Inter', sans-serif;
+
+  /* Typography Sizes */
+  --ts-size-base: 16px;
+  --ts-size-h1: 4rem;
+  --ts-size-h2: 3rem;
+  --ts-size-h3: 2.25rem;
+  --ts-size-h4: 1.75rem;
+  --ts-size-p: 1.125rem;
+  --ts-size-small: 0.875rem;
+
+  /* Typography Weights */
+  --ts-weight-light: 300;
+  --ts-weight-regular: 400;
+  --ts-weight-semibold: 600;
+  --ts-weight-bold: 700;
+  --ts-weight-black: 900;
+
+  /* Glassmorphism Standard */
+  --ts-glass-bg: rgba(245, 239, 232, 0.4);
+  --ts-glass-blur: 12px;
+  --ts-glass-border: 1px solid rgba(255, 255, 255, 0.3);
+  --ts-glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+
+  /* Glassmorphism Heavy */
+  --ts-glass-heavy-bg: rgba(245, 239, 232, 0.7);
+  --ts-glass-heavy-blur: 20px;
+  --ts-glass-heavy-border: 1px solid rgba(255, 255, 255, 0.5);
+  --ts-glass-heavy-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.1);
+
+  /* Spacing */
+  --ts-space-xs: 0.25rem;
+  --ts-space-sm: 0.5rem;
+  --ts-space-md: 1rem;
+  --ts-space-lg: 2rem;
+  --ts-space-xl: 4rem;
+  --ts-space-xxl: 8rem;
+
+  /* Radius */
+  --ts-radius-sm: 4px;
+  --ts-radius-md: 8px;
+  --ts-radius-lg: 16px;
+  --ts-radius-xl: 24px;
+  --ts-radius-full: 9999px;
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: var(--ts-glass-bg);
+  backdrop-filter: blur(var(--ts-glass-blur));
+  -webkit-backdrop-filter: blur(var(--ts-glass-blur));
+  border: var(--ts-glass-border);
+  box-shadow: var(--ts-glass-shadow);
+}
+
+.glass-heavy {
+  background: var(--ts-glass-heavy-bg);
+  backdrop-filter: blur(var(--ts-glass-heavy-blur));
+  -webkit-backdrop-filter: blur(var(--ts-glass-heavy-blur));
+  border: var(--ts-glass-heavy-border);
+  box-shadow: var(--ts-glass-heavy-shadow);
+}
+
+/* Base Styles */
+body {
+  background-color: var(--ts-background);
+  color: var(--ts-text);
+  font-family: var(--ts-font-body);
+  font-size: var(--ts-size-base);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--ts-font-headers);
+  font-weight: var(--ts-weight-bold);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--ts-size-h1);
+}
+
+h2 {
+  font-size: var(--ts-size-h2);
+}
+
+h3 {
+  font-size: var(--ts-size-h3);
+}
+
+h4 {
+  font-size: var(--ts-size-h4);
+}

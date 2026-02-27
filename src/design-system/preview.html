@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkSwift Design System Preview</title>
+    <link rel="stylesheet" href="design-system.css">
+    <style>
+        .preview-container {
+            padding: var(--ts-space-xl);
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            margin-bottom: var(--ts-space-xl);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: var(--ts-space-md);
+        }
+
+        .color-swatch {
+            border-radius: var(--ts-radius-md);
+            padding: var(--ts-space-md);
+            height: 100px;
+            display: flex;
+            align-items: flex-end;
+            font-weight: var(--ts-weight-bold);
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .glass-preview {
+            padding: var(--ts-space-xl);
+            border-radius: var(--ts-radius-lg);
+            position: relative;
+            background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: var(--ts-space-lg);
+        }
+
+        .glass-card {
+            width: 250px;
+            height: 150px;
+            padding: var(--ts-space-md);
+            color: var(--ts-text);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preview-container">
+        <header class="section">
+            <h1>ThinkSwift Design System</h1>
+            <p>Machine-readable tokens and high-end glassmorphism.</p>
+        </header>
+
+        <section class="section">
+            <h2>Brand Colors</h2>
+            <div class="grid">
+                <div class="color-swatch" style="background-color: var(--ts-color-coconut-milk); color: black;">Coconut
+                    Milk (#F5EFE8)</div>
+                <div class="color-swatch" style="background-color: var(--ts-color-orange);">Orange (#FF6A00)</div>
+                <div class="color-swatch" style="background-color: var(--ts-color-blue);">Blue (#1571D3)</div>
+                <div class="color-swatch" style="background-color: var(--ts-color-black);">Black (#000000)</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Typography</h2>
+            <div style="font-family: var(--ts-font-headers);">
+                <h3>Header Font (Host Grotesk)</h3>
+                <p style="font-size: var(--ts-size-h1);">Heading 1 - Bold 4rem</p>
+                <p style="font-size: var(--ts-size-h2);">Heading 2 - Bold 3rem</p>
+            </div>
+            <div style="font-family: var(--ts-font-body);">
+                <h3>Body Font (Inter)</h3>
+                <p>ThinkSwift provides turn-key business solutions with a premium feel. This is the body text using
+                    Inter.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Glassmorphism</h2>
+            <div class="glass-preview">
+                <div class="glass glass-card">
+                    <h4>Standard Glass</h4>
+                    <p>Subtle blur and opacity.</p>
+                </div>
+                <div class="glass-heavy glass-card">
+                    <h4>Heavy Glass</h4>
+                    <p>Decompositional depth.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

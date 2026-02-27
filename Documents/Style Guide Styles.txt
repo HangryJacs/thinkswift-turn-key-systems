@@ -1,0 +1,77 @@
+element.style {
+}
+:root {
+    --new-base_typography---xs--font-size\<deleted\|variable-9ddc3212-520f-ab91-3caf-363e6a6b494f\>: var(--new-base_sizes---fixed--0-75rem\<deleted\|variable-624c86c6-b8c3-1e7b-790f-828c9080a0da\>);
+    --new-base_typography---font-weight--semibold\<deleted\|variable-3078c52f-5937-80d0-eea0-021549d5cb0c\>: 600;
+    --new-base---base--black\<deleted\|variable-599c2a3d-c37a-f4b6-26ea-9592383f48a1\>: #1d1d1d;
+    --bg-color--bg-tertiary: var(--brand--gray-300);
+    --text-color--text-primary: var(--brand--black);
+    --text-color--text-secondary: var(--brand--white);
+    --bg-color--bg-primary: var(--brand--white);
+    --text-color--text-tertiary: var(--brand--gray-600);
+    --border-color--border-primary: #efeff2;
+    --bg-color--bg-secondary: var(--brand--gray-100);
+    --border-color--border-secondary: #d7d7d7;
+    --brand--transparent: transparent;
+    --brand--gray-600: #535353;
+    --bg-color--bg-color-lilac: var(--brand--lilac);
+    --bg-color--bg-blue: var(--brand--blue);
+    --bg-color--bg-color-pink: var(--brand--pink);
+    --brand--yellow: #ebf213;
+    --brand--gray-800: #1d1d1d;
+    --brand--gray-200: #d7d7d7;
+    --brand--white: #fff;
+    --border-color--border-alternate: white;
+    --link-color--link-primary-hover: var(--brand--black);
+    --brand--gray-100: #f7f5f1;
+    --brand--lilac: #e0dbff;
+    --brand--pink: #ffbdf5;
+    --brand--soft-yellow: #fcffa8;
+    --bg-color--bg-color-soft-yellow: var(--brand--soft-yellow);
+    --brand--blue: #dae8fd;
+    --bg-color--bg-green: var(--brand--green);
+    --text-color--text-quaternary: var(--brand--gray-400);
+    --link-color--link-primary: var(--brand--gray-800);
+    --brand--black: #000;
+    --link-color--link-alternate: var(--brand--gray-400);
+    --new-base---bg-secondary: #0f0f0f;
+    --new-base---border-default: #ffffff14;
+    --new-base---border-subtle: #ffffff1f;
+    --new-base---black: #050505;
+    --new-base---text-secondary: #ffffff80;
+    --new-base---bg-primary: #0a0a0f;
+    --new-base---accent-indigo: #4f46e5;
+    --new-base---text-tertiary: #ffffff4d;
+    --new-base---accent-violet: #7c3aed;
+    --new-base---accent-sky: #0ea5e9;
+    --new-base---accent-cyan: #06b6d4;
+    --new-base---white: #fff;
+    --new-base---text-primary: #fff;
+    --brand--gray-900: #131313;
+    --brand--gray-700: #4e4e4e;
+    --brand--gray-500: #aeaeae;
+    --brand--gray-400: #bfbebe;
+Show all properties (5 more)
+}
+html {
+    height: 100%;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+html[Attributes Style] {
+    -webkit-locale: "en";
+}
+user agent stylesheet
+:root {
+    view-transition-name: root;
+}
+user agent stylesheet
+html {
+    display: block;
+}

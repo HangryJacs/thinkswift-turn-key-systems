@@ -1,0 +1,77 @@
+element.style {
+}
+:root {
+    --new-base_typography---xs--font-size: var(--new-base_sizes---fixed--0-75rem);
+    --new-base_typography---font-weight--semibold: 600;
+    --new-base---base--black: #1d1d1d;
+    --bg-color--bg-tertiary: var(--brand--gray-300);
+    --text-color--text-primary: var(--brand--black);
+    --text-color--text-secondary: var(--brand--white);
+    --bg-color--bg-primary: var(--brand--white);
+    --text-color--text-tertiary: var(--brand--gray-600);
+    --border-color--border-primary: #efeff2;
+    --bg-color--bg-secondary: var(--brand--gray-100);
+    --border-color--border-secondary: #d7d7d7;
+    --brand--transparent: transparent;
+    --brand--gray-600: #535353;
+    --bg-color--bg-color-lilac: var(--brand--lilac);
+    --bg-color--bg-blue: var(--brand--blue);
+    --bg-color--bg-color-pink: var(--brand--pink);
+    --brand--yellow: #ebf213;
+    --brand--gray-800: #1d1d1d;
+    --brand--gray-200: #d7d7d7;
+    --brand--white: #fff;
+    --border-color--border-alternate: white;
+    --link-color--link-primary-hover: var(--brand--black);
+    --brand--gray-100: #f7f5f1;
+    --brand--lilac: #e0dbff;
+    --brand--pink: #ffbdf5;
+    --brand--soft-yellow: #fcffa8;
+    --bg-color--bg-color-soft-yellow: var(--brand--soft-yellow);
+    --brand--blue: #dae8fd;
+    --bg-color--bg-green: var(--brand--green);
+    --text-color--text-quaternary: var(--brand--gray-400);
+    --link-color--link-primary: var(--brand--gray-800);
+    --brand--black: #000;
+    --link-color--link-alternate: var(--brand--gray-400);
+    --new-base_sizes---padding-section--small: var(--new-base_sizes---fixed--3-25rem);
+    --new-base_sizes---padding-section--medium: var(--new-base_sizes---fixed--5rem);
+    --new-base_sizes---padding-section--large: var(--new-base_sizes---fixed--6rem);
+    --new-base_typography---h1--font-size: var(--new-base_sizes---fixed--6rem);
+    --new-base_sizes---fixed--0rem: 0rem;
+    --new-base---base--white: #fff;
+    --new-base_typography---h1--font-family: var(--new-base_typography---font-family--headers);
+    --new-base_typography---h1--font-weight: var(--new-base_typography---font-weight--regular);
+    --new-base_typography---h1--letter-spacing: 0em;
+    --new-base_typography---h1--line-height: 1;
+    --new-base_typography---h2--font-size: var(--new-base_sizes---fixed--4-5rem);
+    --new-base_typography---h2--font-family: var(--new-base_typography---font-family--headers);
+    --new-base_typography---h2--font-weight: var(--new-base_typography---font-weight--regular);
+    --new-base_typography---h2--letter-spacing: 0em;
+    --new-base_typography---h2--line-height: 1;
+    --new-base_typography---h3--font-size: var(--new-base_sizes---fixed--3-5rem);
+    --new-base_typography---h3--font-family: var(--new-base_typography---font-family--headers);
+Show all properties (114 more)
+}
+html {
+    height: 100%;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+html[Attributes Style] {
+    -webkit-locale: "en";
+}
+user agent stylesheet
+:root {
+    view-transition-name: root;
+}
+user agent stylesheet
+html {
+    display: block;
+}

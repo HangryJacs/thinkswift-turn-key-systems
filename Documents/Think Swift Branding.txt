@@ -1,0 +1,19 @@
+Brand Colours:
+Pantone Coconut Milk: F5EFE8
+Orange: FF6A00
+Blue: 1571D3
+
+Main background colours:
+Pantone Coconut Milk: F5EFE8
+Black:000000
+
+Text colours:
+Black:000000
+White:000000
+
+Accent Colours:
+Primary accent: Orange: FF6A00
+Secondary accent: Blue: 1571D3
+
+Type:
+Merriweather Serif & Sans
