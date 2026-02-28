@@ -639,14 +639,12 @@ p {
 @media (max-width: 768px) {
     .hero {
         min-height: 85vh;
-        background-position: center;
+        background-position: left center;
+        /* Focus on the clean left side for text readability */
     }
 
     .hero::before {
-        background: linear-gradient(to bottom,
-                rgba(0, 0, 0, 0.3) 0%,
-                rgba(0, 0, 0, 0.6) 60%,
-                rgba(0, 0, 0, 0.75) 100%);
+        display: none;
     }
 
     .hero__inner {
