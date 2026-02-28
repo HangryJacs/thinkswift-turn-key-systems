@@ -43,8 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!navbar) return;
 
         const currentScrollY = window.scrollY;
+        const isAtBottom = (currentScrollY + window.innerHeight) >= (document.documentElement.scrollHeight - 10);
 
-        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        if (isAtBottom) {
+            // Show navbar when at the bottom of the page
+            navbar.classList.remove('nav-hidden');
+        } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
             // Scrolling down
             navbar.classList.add('nav-hidden');
         } else {
