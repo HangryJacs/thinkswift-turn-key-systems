@@ -393,17 +393,18 @@ p {
     background: #1A1A1A;
     border-radius: 12px;
     padding: 4px;
-    display: flex;
+    display: inline-flex;
     align-items: stretch;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
     transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    width: auto;
+    width: max-content;
+    max-width: 95vw;
 }
 
 @media (max-width: 768px) {
     .navbar {
-        bottom: 1rem;
+        display: none !important;
     }
 }
 
@@ -444,24 +445,14 @@ p {
     display: flex;
 }
 
-@media (max-width: 480px) {
-    .navbar__icon {
-        width: 2.75rem;
-    }
-
-    .navbar__btn {
-        padding: 0 0.8rem;
-        font-size: 0.75rem;
-    }
-}
-
 .navbar__btn {
     background: var(--color-orange);
     color: var(--color-white);
-    border-radius: 8px;
+    border-radius: 0 8px 8px 0;
     padding: 0 1.75rem;
     margin: 0;
     height: 100%;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -478,6 +469,17 @@ p {
     background: var(--color-orange-hover);
 }
 
+@media (max-width: 480px) {
+    .navbar__icon {
+        width: 2.75rem;
+    }
+
+    .navbar__btn {
+        padding: 0 0.8rem;
+        font-size: 0.75rem;
+    }
+}
+
 /* ==============================================
    SECTION 1: HERO
    ============================================== */
@@ -490,6 +492,11 @@ p {
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
+    background-color: #000000 !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
 /* Removed the dark overlay to show the natural beauty of the image */
@@ -519,7 +526,7 @@ p {
     margin-bottom: var(--space-lg);
     letter-spacing: -0.03em;
     font-weight: 600;
-    color: var(--color-black);
+    color: var(--color-white);
 }
 
 .hero h1 .accent {
@@ -535,7 +542,7 @@ p {
     font-size: clamp(1rem, 1.5vw, 1.15rem);
     max-width: 500px;
     margin-bottom: var(--space-xl);
-    color: var(--color-grey-600);
+    color: var(--color-white);
     line-height: 1.6;
 }
 
@@ -569,17 +576,18 @@ p {
 }
 
 .hero__actions .btn--secondary {
-    border: 1px solid var(--color-grey-200);
-    background: transparent;
-    color: var(--color-black);
-    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
 }
 
 .hero__actions .btn--secondary:hover {
-    background: rgba(0, 0, 0, 0.05);
-    color: var(--color-black);
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
     transform: translateY(-2px);
-    box-shadow: none;
+    box-shadow: none !important;
+    border-color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /* Hero Social Proof */
@@ -622,7 +630,7 @@ p {
 
 .social-proof-text {
     font-size: 0.95rem;
-    color: var(--color-grey-600);
+    color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -632,7 +640,7 @@ p {
 .social-proof-logo {
     height: 1.3rem;
     margin-top: 0.25rem;
-    filter: brightness(0) opacity(0.6);
+    filter: brightness(0) invert(1) opacity(0.9);
 }
 
 /* Hero mobile */
@@ -640,6 +648,7 @@ p {
     .hero {
         min-height: 85vh;
         background-position: left center;
+        align-items: flex-start;
         /* Focus on the clean left side for text readability */
     }
 
@@ -648,7 +657,8 @@ p {
     }
 
     .hero__inner {
-        padding: var(--space-lg) 0;
+        padding: 10rem 0 var(--space-lg);
+        width: 100%;
     }
 
     .hero__actions {
@@ -662,16 +672,25 @@ p {
     }
 
     .social-proof-text {
-        display: none;
+        font-size: 0.85rem;
+        margin-top: 0.25rem;
+    }
+
+    .hero__social-proof {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-sm);
     }
 
     .hero h1 {
-        font-size: 2.75rem;
+        font-size: 4rem;
         margin-bottom: var(--space-md);
+        line-height: 1;
     }
 
     .hero h1 .accent {
-        font-size: 1.65rem;
+        font-size: 2.5rem;
+        margin-top: 0.2em;
     }
 
     .hero p {
